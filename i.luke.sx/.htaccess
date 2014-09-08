@@ -1,0 +1,6 @@
+Options +FollowSymLinks -MultiViews
+
+RewriteEngine On
+RewriteRule (.*\.png)$ final.php?file=$1 [L]
+ErrorDocument 404 http://luke.sx
+Options -Indexes
